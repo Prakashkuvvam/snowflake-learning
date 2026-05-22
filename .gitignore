@@ -1,0 +1,6 @@
+public/
+.hugo_build.lock
+*.tfstate
+*.tfstate.backup
+.terraform/
+.DS_Store

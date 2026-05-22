@@ -1,0 +1,306 @@
+// Snowflake Learning Notes — Custom Styles
+
+// Color palette
+$primary: #29B5E8;       // Snowflake blue
+$primary-dark: #1a8fc7;
+$primary-light: #e0f4fc;
+$secondary: #7B68EE;     // Medium slate blue for accents
+$success: #2ecc71;
+$warning: #f39c12;
+$danger: #e74c3c;
+$dark: #1a1a2e;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-700: #495057;
+$gray-900: #212529;
+
+// Override book theme colors
+:root {
+  --primary-color: #{$primary};
+  --secondary-color: #{$secondary};
+  --accent-color: #{$primary-dark};
+}
+
+// Header
+.book-header {
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%) !important;
+  color: white !important;
+
+  h1, h2, h3 {
+    color: white !important;
+  }
+}
+
+// Navigation
+.book-menu {
+  a {
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $primary !important;
+      transform: translateX(2px);
+    }
+
+    &.active {
+      color: $primary !important;
+      font-weight: 600 !important;
+      border-left: 3px solid $primary;
+    }
+  }
+}
+
+// Content
+.book-page {
+  h1 {
+    color: $dark;
+    border-bottom: 3px solid $primary;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    color: $primary-dark;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    color: $secondary;
+  }
+
+  // Code blocks
+  pre {
+    background: $dark !important;
+    border-radius: 8px;
+    border-left: 4px solid $primary;
+    padding: 1rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  code {
+    font-size: 0.9em;
+  }
+
+  // Tables
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    th {
+      background: linear-gradient(135deg, $primary, $primary-dark);
+      color: white;
+      font-weight: 600;
+      padding: 12px 16px;
+      border: none;
+    }
+
+    td {
+      padding: 10px 16px;
+      border-bottom: 1px solid $gray-200;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: $primary-light;
+    }
+  }
+
+  // Blockquotes / hints
+  blockquote, .hint {
+    border-left: 4px solid $primary;
+    background: $primary-light;
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  // Buttons
+  .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &-primary {
+      background: $primary;
+      color: white;
+      border: none;
+
+      &:hover {
+        background: $primary-dark;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba($primary, 0.3);
+      }
+    }
+  }
+}
+
+// Progress Dashboard Styles
+#snowflake-progress-dashboard {
+  .progress-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .stat-card {
+      background: white;
+      border: 1px solid $gray-200;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      }
+
+      h3 {
+        font-size: 0.9rem;
+        color: $gray-700;
+        margin: 0 0 0.5rem 0;
+      }
+
+      span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $primary;
+      }
+    }
+
+    .progress-bar-container {
+      grid-column: 1 / -1;
+      background: $gray-200;
+      border-radius: 10px;
+      height: 12px;
+      overflow: hidden;
+
+      .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, $primary, $secondary);
+        border-radius: 10px;
+        transition: width 0.5s ease;
+      }
+    }
+  }
+
+  .topic-checklist {
+    margin: 2rem 0;
+
+    .topic-checkbox {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      accent-color: $success;
+
+      &:checked {
+        animation: pulse 0.3s ease;
+      }
+    }
+
+    .note-input {
+      border: 1px solid $gray-200;
+      border-radius: 6px;
+      padding: 6px 12px;
+      width: 100%;
+      transition: border-color 0.2s;
+
+      &:focus {
+        outline: none;
+        border-color: $primary;
+        box-shadow: 0 0 0 3px rgba($primary, 0.15);
+      }
+    }
+  }
+
+  .study-sessions {
+    margin: 2rem 0;
+
+    .session-log {
+      background: $gray-100;
+      border-radius: 12px;
+      padding: 1.5rem;
+
+      input {
+        border: 1px solid $gray-200;
+        border-radius: 6px;
+        padding: 8px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+// Exam timer styles
+#exam-timer {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: 2px solid $primary;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 1000;
+
+  #timer-display {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $dark;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &.warning {
+    border-color: $warning;
+    #timer-display { color: $warning; }
+  }
+
+  &.danger {
+    border-color: $danger;
+    animation: blink 1s infinite;
+    #timer-display { color: $danger; }
+  }
+}
+
+// Animations
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .book-page table {
+    font-size: 0.85rem;
+  }
+
+  #snowflake-progress-dashboard .progress-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Print
+@media print {
+  .book-header,
+  #exam-timer {
+    display: none !important;
+  }
+}

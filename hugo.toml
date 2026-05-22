@@ -1,0 +1,82 @@
+baseURL = "/complete_snowflake_notes/"
+title = "Snowflake Learning Path"
+theme = "book"
+locale = "en-us"
+defaultContentLanguage = "en"
+
+# Book theme configuration
+[params]
+  # Website description
+  description = "Complete Snowflake learning path from zero to production-grade — designed for data engineering and analytics"
+
+  # Theme: light, dark, or auto (follows OS preference)
+  BookTheme = "dark"
+
+  # Show or hide table of contents
+  BookShowToC = true
+
+  # Section numbering
+  BookSectionNumber = true
+
+  # Repository configuration
+  BookRepo = "https://github.com/prakashkuvvam/complete_snowflake_notes"
+  BookEditPath = "edit/main/content"
+  BookCommitPath = "commit/main/content"
+
+  # Hide empty menu sections
+  BookMenuBundleDisabled = true
+
+  # Date format
+  BookDateFormat = "January 2, 2006"
+
+  # Search
+  BookSearch = true
+
+# Author
+[author]
+  name = "Snowflake Learning"
+
+# Syntax highlighting
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    style = "dracula"
+    tabWidth = 2
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Menu configuration
+[menu]
+  [[menu.before]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.before]]
+    identifier = "docs"
+    name = "Documentation"
+    url = "/docs/"
+    weight = 2
+
+  [[menu.before]]
+    identifier = "labs"
+    name = "Labs"
+    url = "/labs/"
+    weight = 3
+
+  [[menu.before]]
+    identifier = "examples"
+    name = "Examples"
+    url = "/examples/"
+    weight = 4
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
