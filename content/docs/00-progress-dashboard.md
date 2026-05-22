@@ -1,6 +1,6 @@
 ---
 title: "Progress Dashboard"
-weight: 23
+weight: -10
 ---
 # Progress Dashboard
 

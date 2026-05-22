@@ -65,6 +65,6 @@ Welcome to the comprehensive Snowflake learning curriculum. This section contain
 
 | Resource | Link |
 |----------|------|
-| 📊 Progress Dashboard | [Track your progress]({{< relref "23-progress-dashboard" >}}) |
+| 📊 Progress Dashboard | [Track your progress]({{< relref "00-progress-dashboard" >}}) |
 | 🛠️ Hands-On Labs | [Practice exercises]({{< relref "/labs" >}}) |
 | 💡 Example Projects | [Complete examples]({{< relref "/examples" >}}) |

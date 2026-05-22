@@ -209,7 +209,7 @@ Build an end-to-end Snowflake pipeline:
 
 ## 📊 Track Your Progress
 
-1. Visit the **[📊 Progress Dashboard]({{< relref "23-progress-dashboard" >}})** to see your overall progress
+1. Visit the **[📊 Progress Dashboard]({{< relref "00-progress-dashboard" >}})** to see your overall progress
 2. Open any chapter — it's automatically marked as **read**
 3. When you finish a chapter, check the **"Mark as completed"** box
 4. On practice tests, use the built-in **timer** and check your answers

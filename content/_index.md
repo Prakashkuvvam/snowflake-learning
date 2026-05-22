@@ -30,7 +30,7 @@ bookToC: false
 1. **Start with Week 1** — SQL foundation if you're new, or go straight to [Chapter 1: Start Here]({{< relref "docs/01-start-here" >}})
 2. **Follow the 8-week study plan** detailed in the [Start Here guide]({{< relref "docs/01-start-here" >}})
 3. **Practice with SQL** — every concept is paired with examples
-4. **Track your progress** on the [Progress Dashboard]({{< relref "docs/23-progress-dashboard" >}})
+4. **Track your progress** on the [Progress Dashboard]({{< relref "docs/00-progress-dashboard" >}})
 5. **Test yourself** with practice tests and chapter quizzes
 
 ### Learning Tips
@@ -67,6 +67,6 @@ bookToC: false
 | 📖 Full Documentation | [Browse all chapters →]({{< relref "docs" >}}) |
 | 🏁 Start Here Guide | [🚀 Start Here →]({{< relref "docs/01-start-here" >}}) |
 | 🧪 Practice Tests | [Test 1]({{< relref "docs/16-exam-practice-test-1" >}}) · [Test 2]({{< relref "docs/17-exam-practice-test-2" >}}) · [Test 3]({{< relref "docs/18-exam-practice-test-3" >}}) · [Test 4]({{< relref "docs/19-exam-practice-test-4" >}}) · [Test 5]({{< relref "docs/20-exam-practice-test-5" >}}) · [Test 6]({{< relref "docs/21-exam-practice-test-6" >}}) · [Test 7]({{< relref "docs/22-exam-practice-test-7" >}}) |
-| 📊 Progress Dashboard | [Track your progress →]({{< relref "docs/23-progress-dashboard" >}}) |
+| 📊 Progress Dashboard | [Track your progress →]({{< relref "docs/00-progress-dashboard" >}}) |
 | 📈 Labs | [Hands-on labs →]({{< relref "labs" >}}) |
 | 💡 Examples | [Example projects →]({{< relref "examples" >}}) |
